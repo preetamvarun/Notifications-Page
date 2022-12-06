@@ -7,9 +7,9 @@ class Notifications extends Component{
         super(props);
         this.state = {
             track : [
-            {bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!'},
-            {bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null},
-            {bckColor : 'grey', time : '1day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club'}],
+            {bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!', path : 'mark-webber'},
+            {bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null, path : 'angela-gray'},
+            {bckColor : 'grey', time : '1day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club', path : 'jacob-thompson'}],
             count : 3
         }
         this.changeBck = this.changeBck.bind(this);
@@ -53,7 +53,7 @@ class Notifications extends Component{
         const divs = this.state.track.map((eachObj) => 
         <Recentnots bckColor = {eachObj.bckColor} name = {eachObj.name} 
         changeBck = {this.changeBck} key = {eachObj.name} time = {eachObj.time}
-        msg1 = {eachObj.msg1} msg2 = {eachObj.msg2}
+        msg1 = {eachObj.msg1} msg2 = {eachObj.msg2} path = {eachObj.path}
         />)
         return(
             <div>

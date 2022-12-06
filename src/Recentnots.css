@@ -7,6 +7,7 @@
 .Recentnots{
     margin : 1rem;
     padding : .5rem;
+    display : flex;
 }
 
 .Recentnots:hover{

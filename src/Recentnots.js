@@ -18,8 +18,11 @@ class Recentnots extends Component{
             <div className = 'Recentnots' 
                 style = {{backgroundColor : this.props.bckColor}}
                 onClick = {this.handleClick}> 
-                <p>{this.props.name} {this.props.msg1} <b>{this.props.msg2}</b></p>
-                <p>{this.props.time}</p>
+                <img src = {require(`./images/avatar-${this.props.path}_png.png`)} alt = {this.props.name}/>
+                <div>
+                    <p>{this.props.name} {this.props.msg1} <b>{this.props.msg2}</b></p>
+                    <p>{this.props.time}</p>
+                </div>
             </div>
         )
     }
