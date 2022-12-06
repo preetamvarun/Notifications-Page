@@ -7,9 +7,11 @@ class Notifications extends Component{
         super(props);
         this.state = {
             track : [
-            {bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!', path : 'mark-webber'},
-            {bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null, path : 'angela-gray'},
-            {bckColor : 'grey', time : '1day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club', path : 'jacob-thompson'}],
+            {stateful : true, bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!', path : 'mark-webber'},
+            {stateful : true, bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null, path : 'angela-gray'},
+            {stateful : true, bckColor : 'grey', time : '1 day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club', path : 'jacob-thompson'},
+            {stateful : false, bckColor : 'white', time : '5 days ago', name : 'rizky hasanuddin', msg1 : 'sent you a private message', msg : null, path : 'rizky-hasanuddin'}
+        ],
             count : 3
         }
         this.changeBck = this.changeBck.bind(this);
@@ -51,9 +53,10 @@ class Notifications extends Component{
     }
     render(){
         const divs = this.state.track.map((eachObj) => 
-        <Recentnots bckColor = {eachObj.bckColor} name = {eachObj.name} 
-        changeBck = {this.changeBck} key = {eachObj.name} time = {eachObj.time}
-        msg1 = {eachObj.msg1} msg2 = {eachObj.msg2} path = {eachObj.path}
+        <Recentnots 
+        bckColor = {eachObj.bckColor} name = {eachObj.name} changeBck = {this.changeBck} 
+        key = {eachObj.name} time = {eachObj.time} msg1 = {eachObj.msg1} 
+        msg2 = {eachObj.msg2} path = {eachObj.path} stateful = {eachObj.stateful}
         />)
         return(
             <div>

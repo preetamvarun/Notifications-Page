@@ -8,6 +8,13 @@
     margin : 1rem;
     padding : .5rem;
     display : flex;
+    align-items: center;
+}
+
+.Recentnots img{
+    height : 5rem;
+    width : 5rem;
+    margin : .5rem;
 }
 
 .Recentnots:hover{
@@ -16,4 +23,19 @@
 
 .Recentnots p{
     text-align : left;
+}
+
+.Recentnots > div{
+    margin : 1rem;
+}
+
+.Recentnots > div p:first-child{
+    margin-bottom : .15rem;
+}
+
+.Recentnots > div p:nth-child(3){
+    width : 80%;
+    border : .65px solid black;
+    margin-top : .75rem;
+    padding : .75rem;
 }
