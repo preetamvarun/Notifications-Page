@@ -8,7 +8,7 @@ class Recentnots extends Component{
         this.backgroundChange = this.backgroundChange.bind(this);
     }
     backgroundChange(){
-        this.props.changeBck(this.props.msg);
+        this.props.changeBck(this.props.name);
     }
     handleClick(evt){
         this.backgroundChange();
@@ -18,7 +18,8 @@ class Recentnots extends Component{
             <div className = 'Recentnots' 
                 style = {{backgroundColor : this.props.bckColor}}
                 onClick = {this.handleClick}> 
-                {this.props.msg} 
+                <p>{this.props.name} {this.props.msg1} <b>{this.props.msg2}</b></p>
+                <p>{this.props.time}</p>
             </div>
         )
     }

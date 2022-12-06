@@ -12,3 +12,7 @@
 .Recentnots:hover{
     cursor : pointer;
 }
+
+.Recentnots p{
+    text-align : left;
+}

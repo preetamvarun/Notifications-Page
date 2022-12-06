@@ -3,14 +3,13 @@ import Childnot from './Childnot';
 import Recentnots from './Recentnots';
 
 class Notifications extends Component{
-    static defaultProps = {
-        msgs : ['a','b','c']
-    }
     constructor(props){
         super(props);
         this.state = {
-            track : [{msg : 'a', bckColor : 'grey'},
-            {msg : 'b',bckColor : 'grey'},{msg : 'c',bckColor : 'grey'}],
+            track : [
+            {bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!'},
+            {bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null},
+            {bckColor : 'grey', time : '1day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club'}],
             count : 3
         }
         this.changeBck = this.changeBck.bind(this);
@@ -32,13 +31,13 @@ class Notifications extends Component{
             }
         })
     }
-    changeBck(msg){
+    changeBck(name){
         let IncCount;
         let newTrack = this.state.track;
         newTrack.forEach((obj) => {
-            if(obj.msg === msg){
+            if(obj.name === name){
                 obj.bckColor = obj.bckColor === 'grey' ? 'white' : 'grey';
-                IncCount = obj.bckColor === 'white' ? false : true 
+                IncCount = obj.bckColor === 'white' ? false : true;
             }
         })
         this.setState((curState) => {
@@ -52,8 +51,10 @@ class Notifications extends Component{
     }
     render(){
         const divs = this.state.track.map((eachObj) => 
-        <Recentnots bckColor = {eachObj.bckColor} msg = {eachObj.msg} changeBck = {this.changeBck} key = {eachObj.msg}/>
-        )
+        <Recentnots bckColor = {eachObj.bckColor} name = {eachObj.name} 
+        changeBck = {this.changeBck} key = {eachObj.name} time = {eachObj.time}
+        msg1 = {eachObj.msg1} msg2 = {eachObj.msg2}
+        />)
         return(
             <div>
                 <Childnot count = {this.state.count} clearNots = {this.clearNots}/>
