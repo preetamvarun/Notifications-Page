@@ -10,7 +10,10 @@ class Notifications extends Component{
             {stateful : true, bckColor : 'grey', time : '1m ago', name : 'Mark Webber', msg1 : 'Reacted to your recent post', msg2 : 'My first tournament today!', path : 'mark-webber'},
             {stateful : true, bckColor : 'grey', time : '5m ago', name : 'Angela Gray', msg1 : 'Followed you', msg2 : null, path : 'angela-gray'},
             {stateful : true, bckColor : 'grey', time : '1 day ago', name : 'Jacob Thompson', msg1 : 'has joined your group', msg2 : 'Chess Club', path : 'jacob-thompson'},
-            {stateful : false, bckColor : 'white', time : '5 days ago', name : 'rizky hasanuddin', msg1 : 'sent you a private message', msg : null, path : 'rizky-hasanuddin'}
+            {stateful : false, bckColor : 'white', time : '5 days ago', name : 'rizky hasanuddin', msg1 : 'sent you a private message', msg2 : null, path : 'rizky-hasanuddin'},
+            {stateful : false, bckColor : 'white', time : '1 week ago', name : 'kimberly smith', msg1 : 'commented on your picture', msg2 : null, path : 'kimberly-smith'},
+            {stateful : false, bckColor : 'white', time : '2 weeks ago', name : 'Nathan Peterson', msg1 : 'reacted to your recent post', msg2 : '5 end-game strategies to increase your win rate', path : 'nathan-peterson'},
+            {stateful : false, bckColor : 'white', time : '2 weeks ago', name : 'anna kim', msg1 : 'left the group', msg2 : 'chess club', path : 'anna-kim'}
         ],
             count : 3
         }
