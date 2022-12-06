@@ -8,7 +8,7 @@ class Childnot extends Component{
                 <div className='noteCount'>
                     <div>
                         <p><b>Notifications</b></p>
-                        <span>3</span>
+                        <span>{this.props.count}</span>
                     </div>
                     <a href = "/#">Mark all as read</a>
                 </div>
