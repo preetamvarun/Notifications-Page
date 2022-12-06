@@ -1,0 +1,31 @@
+*,*::before,*::after{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+
+.noteCount{
+    background-color: purple;
+    display : flex;
+    justify-content: space-around;
+    padding : 1rem 0rem;
+}
+
+.noteCount p{
+    display : inline-block;
+    margin-right : 1rem;
+}
+
+.noteCount a{
+    display : inline-block;
+    text-decoration : none;
+    color : grey;
+}
+
+.noteCount span{
+    background-color: green;
+    padding : .45rem .75rem;
+    border-radius : 5px;
+    color : white;
+}
