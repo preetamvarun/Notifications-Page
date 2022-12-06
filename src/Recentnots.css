@@ -9,11 +9,13 @@
     padding : .5rem;
     display : flex;
     align-items: center;
+    border-radius : 5px;
+    position: relative;
 }
 
 .Recentnots img{
-    height : 5rem;
-    width : 5rem;
+    height : 4.75rem;
+    width : 4.75rem;
     margin : .5rem;
 }
 
