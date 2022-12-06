@@ -9,24 +9,55 @@ class Notifications extends Component{
     constructor(props){
         super(props);
         this.state = {
-            count : 3,
-            clicked : false
+            track : [{msg : 'a', bckColor : 'grey'},
+            {msg : 'b',bckColor : 'grey'},{msg : 'c',bckColor : 'grey'}],
+            count : 3
         }
-        this.changeCount = this.changeCount.bind(this);
+        this.changeBck = this.changeBck.bind(this);
+        this.clearNots = this.clearNots.bind(this);
     }
-    changeCount(){
-        this.setState((currentState) => {
+    clearNots(){
+        let clearTrack = this.state.track;
+        clearTrack.forEach((obj) => {
+            obj.bckColor = 'white';
+        })
+        this.setState(() => {
             return {
-                count : currentState.clicked === false ? currentState.count - 1 : currentState.count + 1,
-                clikced : !currentState.clicked
+                count : 0
+            }
+        })
+        this.setState(() => {
+            return {
+                track : clearTrack
             }
         })
     }
+    changeBck(msg){
+        let IncCount;
+        let newTrack = this.state.track;
+        newTrack.forEach((obj) => {
+            if(obj.msg === msg){
+                obj.bckColor = obj.bckColor === 'grey' ? 'white' : 'grey';
+                IncCount = obj.bckColor === 'white' ? false : true 
+            }
+        })
+        this.setState((curState) => {
+            return {
+                count : IncCount ? curState.count + 1 : curState.count - 1
+            }
+        })
+        this.setState({
+            track : newTrack
+        })
+    }
     render(){
+        const divs = this.state.track.map((eachObj) => 
+        <Recentnots bckColor = {eachObj.bckColor} msg = {eachObj.msg} changeBck = {this.changeBck} key = {eachObj.msg}/>
+        )
         return(
             <div>
-                <Childnot count = {this.state.count}/>
-                <Recentnots msg = {'a'} changeCount = {this.props.changeCount}/>
+                <Childnot count = {this.state.count} clearNots = {this.clearNots}/>
+                {divs}
             </div>
         )
     }
