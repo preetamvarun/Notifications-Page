@@ -20,10 +20,10 @@ class Recentnots extends Component{
                 onClick = {this.props.stateful && this.handleClick}> 
                 <img src = {require(`./images/avatar-${this.props.path}_png.png`)} alt = {this.props.name}/>
                 <div>
-                    <p><b>{this.props.name}</b> {this.props.msg1} <b>{this.props.msg2}</b></p>
+                    <p style = {{color : 'black'}}><b style = {{color : 'black'}}>{this.props.name}</b> {this.props.msg1} <b>{this.props.msg2}</b></p>
                     <p>{this.props.time}</p>
                     {this.props.name === 'rizky hasanuddin' && 
-                    <p>Hello, Thanks for setting up the chess club. I've been a member for 
+                    <p style = {{color : 'black'}}>Hello, Thanks for setting up the chess club. I've been a member for 
                     few week now and I am already 
                     having lot's of fun besides improving my game.</p>
                     }
