@@ -33,7 +33,7 @@ class Recentnots extends Component{
                     }
                 </div>
                 {this.props.name === 'kimberly smith' && 
-                <img className = "chessImage" src = {require('./images/image-chess.png')} alt = {this.props.name}/>
+                <img src = {require('./images/image-chess.png')} alt = {this.props.name} className = 'chessImage'/>
                 }
             </div>
         )
