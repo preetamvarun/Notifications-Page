@@ -46,3 +46,18 @@
 .makeGrey{
     color : hsl(219, 12%, 42%);
 }
+
+/* WRITING MEDIA QUERIES FOR MOBILE PHONES */
+
+@media (max-width : 376px){
+    .noteCount{
+        display: flex;
+        flex-direction: column;
+    }
+    .notificationsCount{
+        margin : auto;
+    }
+    .noteCount a{
+        margin : .5rem auto;
+    }
+}

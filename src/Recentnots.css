@@ -14,6 +14,11 @@
     color : hsl(219, 14%, 63%);
 }
 
+.chessImage{
+    position : 'absolute';
+    right : 0;
+}
+
 .Recentnots img{
     height : 4.75rem;
     width : 4.75rem;

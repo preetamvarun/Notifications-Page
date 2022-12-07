@@ -17,7 +17,7 @@ class Childnot extends Component{
         return(
             <div>
                 <div className='noteCount'>
-                    <div>
+                    <div className = 'notificationsCount'>
                         <p><b>Notifications</b></p>
                         <span>{this.props.count}</span>
                     </div>
