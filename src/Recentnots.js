@@ -17,11 +17,11 @@ class Recentnots extends Component{
         return(
             <div className = 'Recentnots' 
                 style = {{backgroundColor : this.props.bckColor}}
-                onClick = {this.props.stateful && this.handleClick}> 
+                onClick = {this.props.stateful ?  this.handleClick : undefined}> 
                 <img src = {require(`./images/avatar-${this.props.path}_png.png`)} alt = {this.props.name}/>
                 <div>
                     <p className = {this.props.bckColor === 'white' ? null : 'First'}>
-                        <b style = {{color : 'black'}}>{this.props.name}</b> 
+                        <b style = {{color : 'black', fontWeight : '800px'}}>{this.props.name}</b> 
                         <span style={{color : 'hsl(219, 12%, 42%)'}}> {this.props.msg1}</span>
                         <b className= {this.props.msg2 === 'Chess Club' ? 'makeBlue' : 'makeGrey'}> {this.props.msg2}</b>
                     </p>
@@ -34,7 +34,7 @@ class Recentnots extends Component{
                 </div>
                 {this.props.name === 'kimberly smith' && 
                 <img src = {require('./images/image-chess.png')} alt = {this.props.name}
-                style = {{position : 'absolute', right : '0'}}
+                style = {{position : 'absolute', right : '0', height : '70px', weight : '50px'}}
                 />
                 }
             </div>
