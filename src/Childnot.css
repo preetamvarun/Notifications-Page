@@ -25,7 +25,7 @@
 }
 
 .noteCount a:hover{
-    color : blue;
+    color : hsl(251, 90%, 27%);
 }
 
 .noteCount > div{

@@ -36,6 +36,20 @@
     margin-bottom : .15rem;
 }
 
+.First{
+    display: relative;
+}
+
+.First::after{
+    position: absolute;
+    content : '';
+    height : 10px;
+    width : 10px;
+    background-color : red;
+    border-radius: 50px;
+    transform: translate(60%,60%);
+}
+
 .Recentnots > div p:nth-child(3){
     width : 80%;
     border : .65px solid black;
