@@ -49,15 +49,16 @@
 
 /* WRITING MEDIA QUERIES FOR MOBILE PHONES */
 
-@media (max-width : 376px){
+@media (max-width : 400px){
     .noteCount{
         display: flex;
         flex-direction: column;
     }
     .notificationsCount{
-        margin : auto;
+        width : 80%;
+        padding : .35rem;
     }
     .noteCount a{
-        margin : .5rem auto;
+        margin : .45rem auto 0 auto;
     }
 }
