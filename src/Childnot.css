@@ -33,8 +33,16 @@
 }
 
 .noteCount span{
-    background-color: blue;
+    background-color: hsl(251, 90%, 27%);
     padding : .25rem .75rem;
     border-radius : 5px;
     color : white;
+}
+
+.makeBlue{
+    color :  hsl(251, 90%, 27%);
+}
+
+.makeGrey{
+    color : hsl(219, 12%, 42%);
 }

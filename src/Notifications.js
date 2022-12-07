@@ -13,7 +13,7 @@ class Notifications extends Component{
             {stateful : false, bckColor : 'white', time : '5 days ago', name : 'rizky hasanuddin', msg1 : 'sent you a private message', msg2 : null, path : 'rizky-hasanuddin'},
             {stateful : false, bckColor : 'white', time : '1 week ago', name : 'kimberly smith', msg1 : 'commented on your picture', msg2 : null, path : 'kimberly-smith'},
             {stateful : false, bckColor : 'white', time : '2 weeks ago', name : 'Nathan Peterson', msg1 : 'reacted to your recent post', msg2 : '5 end-game strategies to increase your win rate', path : 'nathan-peterson'},
-            {stateful : false, bckColor : 'white', time : '2 weeks ago', name : 'anna kim', msg1 : 'left the group', msg2 : 'chess club', path : 'anna-kim'}
+            {stateful : false, bckColor : 'white', time : '2 weeks ago', name : 'anna kim', msg1 : 'left the group', msg2 : 'Chess Club', path : 'anna-kim'}
         ],
             count : 3
         }
