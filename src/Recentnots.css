@@ -56,3 +56,7 @@
     margin-top : .75rem;
     padding : .75rem;
 }
+
+.Recentnots > div p:nth-child(3):hover{
+    background-color: hsla(219, 70%, 66%, 0.183);
+}
