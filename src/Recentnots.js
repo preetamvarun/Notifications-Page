@@ -27,7 +27,7 @@ class Recentnots extends Component{
                     </p>
                     <p>{this.props.time}</p>
                     {this.props.name === 'rizky hasanuddin' && 
-                    <p style = {{color : 'black'}}>Hello, Thanks for setting up the chess club. I've been a member for 
+                    <p className = 'chessClubReview' style = {{color : 'black'}}>Hello, Thanks for setting up the chess club. I've been a member for 
                     few week now and I am already 
                     having lot's of fun besides improving my game.</p>
                     }

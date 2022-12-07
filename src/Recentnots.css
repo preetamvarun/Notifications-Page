@@ -65,3 +65,9 @@
 .Recentnots > div p:nth-child(3):hover{
     background-color: hsla(219, 70%, 66%, 0.183);
 }
+
+@media (max-width : 376px){
+    .chessClubReview{
+        font-size : .7rem;
+    }
+}
