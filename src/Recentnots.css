@@ -16,17 +16,8 @@
 
 .chessImage{
     position : absolute;
-    right : 0;
-    margin-right : 2rem;
+    right : 10%;
 }
-
-.Recentnots img{
-    height : 4.75rem;
-    width : 4.75rem;
-    margin : .5rem;
-}
-
-
 
 .Recentnots:hover{
     cursor : pointer;
@@ -76,10 +67,37 @@
     .Recentnots > div p:nth-child(3){
         width : 100%;
     }
+    .profilePic{
+        scale: .75;
+    }
+    .chessImage {
+        right : 0;
+        scale : .65;
+        transform: translate(50%,40%);
+    }
 }
 
-@media (min-width : 400px) and (max-width : 540px){
+@media (min-width : 401px) and (max-width : 540px){
     .Recentnots > div p:nth-child(3){
         width : 100%;
+    }
+    .chessImage {
+        right : 0;
+        scale : .65;
+        transform: translateX(25%);
+    }
+}
+
+@media (min-width : 540px) and (max-width : 768px){
+    .chessImage{
+        transform: translate(70%,50%);
+    }
+}
+
+@media (min-width : 768px) and (max-width : 900px){
+    .chessImage{
+        right : 0;
+        scale : .85;
+        transform : translateX(40%);
     }
 }

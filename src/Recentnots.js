@@ -18,7 +18,7 @@ class Recentnots extends Component{
             <div className = 'Recentnots' 
                 style = {{backgroundColor : this.props.bckColor}}
                 onClick = {this.props.stateful ?  this.handleClick : undefined}> 
-                <img src = {require(`./images/avatar-${this.props.path}_png.png`)} alt = {this.props.name}/>
+                <img src = {require(`./images/avatar-${this.props.path}_png.png`)} alt = {this.props.name} className = 'profilePic'/>
                 <div>
                     <p className = {this.props.bckColor === 'white' ? null : 'First'}>
                         <b style = {{color : 'black', fontWeight : '800px'}}>{this.props.name}</b> 
