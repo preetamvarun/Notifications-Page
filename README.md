@@ -30,8 +30,8 @@ Preview will be added soon
 #### Clone the repo
 
 ```sh
-$ git clone https://github.com/preetamvarun/Pig-Game.git
-$ cd Pig-Game/
+$ git clone https://github.com/preetamvarun/Notifications-Page.git
+$ cd Notifications-Page/
 $ npm install
 ```
 
